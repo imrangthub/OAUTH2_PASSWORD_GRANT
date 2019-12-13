@@ -15,14 +15,14 @@ public class SpringBootAuthoriztionServerApplication {
 		SpringApplication.run(SpringBootAuthoriztionServerApplication.class, args);
 	}
 
-	@Configuration
-	protected static class AuthenticationManagerConfiguration extends GlobalAuthenticationConfigurerAdapter {
-
-		@Override
-		public void init(AuthenticationManagerBuilder auth) throws Exception {
-			auth.inMemoryAuthentication().withUser("imran").password("12345").roles("USER");
-		}
-
-	}
+//	@Configuration
+//	protected static class AuthenticationManagerConfiguration extends GlobalAuthenticationConfigurerAdapter {
+//
+//		@Override
+//		public void init(AuthenticationManagerBuilder auth) throws Exception {
+//			auth.inMemoryAuthentication().withUser("imran").password("12345").roles("USER");
+//		}
+//
+//	}
 
 }
